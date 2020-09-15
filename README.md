@@ -34,3 +34,21 @@ void loop() {
 }
 4個燈有左到右
 - - - - - - - - - - - - - - - 
+int LED=9;
+void setup() {
+  for(int i=2 ;i<9;i++)
+   pinMode(i,OUTPUT);
+}
+void loop() {
+  // put your main code here, to run repeatedly;
+  for(int i=9; i>1; i--)
+    digitalWrite(i,HIGH);
+  if (LED>=2)
+    digitalWrite(LED,LOW);
+  else
+     LED=9;
+  LED--;
+  delay(1000);
+}
+8個燈由左到右閃
+- - - - - - - - -- - - - - - - -- 
