@@ -5,7 +5,7 @@ pinMode(3,OUTPUT) 腳位模式
 燈光閃爍
 void setup() {
   // put your setup code here, to run once:
-  pinMode(3=腳位,OUTPUT=輸出);
+  pinMode(3=腳位,OUTPUT=輸出);  
 }
 
 void loop() {
@@ -65,3 +65,28 @@ void loop() {
  if(digitalRead(2)==0)
     digitalWrite(3,LOW);
 }
+- - - - - - - - - - - - - - - - - -
+rgb 呼吸燈 變顏色
+void setup(){
+  //put your setup code here, to run once;
+for(int i =9 ;i<12;i++)
+pinMode(i,OUTPUT);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly;
+rgb(180,0,0);
+delay(500);
+rgb(0,180,0);
+delay(500);
+rgb(0,0,180);
+delay(500);
+}
+    void rgb(int r, int g,int b)
+{
+ analogWrite(9,r);
+ analogWrite(10,g);
+ analogWrite(11,b);
+}
+
