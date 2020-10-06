@@ -16,6 +16,7 @@ void loop() {
   delay(500);
 }
 ------------------------- 
+4個燈有左到右
 int LED=5;
 void setup() {
   for(int i=2 ;i<6;i++)
@@ -32,8 +33,8 @@ void loop() {
   LED--;
   delay(1000);
 }
-4個燈有左到右
 - - - - - - - - - - - - - - - 
+8個燈由左到右閃
 int LED=9;
 void setup() {
   for(int i=2 ;i<9;i++)
@@ -50,7 +51,6 @@ void loop() {
   LED--;
   delay(1000);
 }
-8個燈由左到右閃
 - - - - - - - - -- - - - - - - -- 
 按鈕控制開關
 void setup(){
